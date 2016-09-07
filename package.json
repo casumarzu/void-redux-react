@@ -7,8 +7,8 @@
     "test": "jest",
     "clean": "rimraf dist",
     "start": "npm run dev",
-    "dev": "NODE_ENV=development babel-node devServer",
-    "build": "NODE_ENV=production webpack --config webpack.config.babel.js",
+    "dev": "cross-env NODE_ENV=development babel-node devServer",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.babel.js",
     "prod": "npm run clean && npm run build"
   },
   "repository": {
@@ -28,6 +28,7 @@
   "devDependencies": {
     "babel-jest": "^14.1.0",
     "babel-polyfill": "^6.13.0",
+    "cross-env": "^2.0.1",
     "file": "^0.2.2",
     "file-loader": "^0.8.5",
     "jest-cli": "^14.1.0",
