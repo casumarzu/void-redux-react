@@ -9,7 +9,7 @@ import colors from 'colors'
 const NODE_ENV = process.env.NODE_ENV
 let plugins
 
-const title = 'Audio Api'
+const title = 'Test'
 
 if(NODE_ENV === 'development') {
   plugins = [
